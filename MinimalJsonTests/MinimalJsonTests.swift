@@ -11,9 +11,16 @@ import XCTest
 
 class MinimalJsonTests: XCTestCase {
     
+    var JSONData: NSData!
+    
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+
+        if let file = NSBundle(forClass: MinimalJsonTests.self).pathForResource("TwitterUserTimeline", ofType: "json") {
+            JSONData = NSData(contentsOfFile: file)
+        } else {
+            XCTFail("Missing TwitterUserTimeline file")
+        }
     }
     
     override func tearDown() {
@@ -23,7 +30,10 @@ class MinimalJsonTests: XCTestCase {
     
     func testExample() {
         // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+        
+        var parsedJSON = JSON(data: JSONData)
+        
+        XCTAssertNotNil(parsedJSON, "Pass")
     }
     
     func testPerformanceExample() {
