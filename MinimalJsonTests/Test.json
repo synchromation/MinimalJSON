@@ -1,0 +1,33 @@
+
+{
+    "null": null,
+    "boolfalse": false,
+    "booltrue": true,
+    "string" : "test",
+    "stringempty" : "",
+    "intzero" : 0,
+    "intnegative" : -9999,
+    "intpositive" : 9999,
+    "doublezero" : 0.0,
+    "doublenegative" : -9999.0,
+    "doublepositive" : 9999.0,
+    "date": "Wed Aug 29 17:12:58 +0000 2012",
+    "arraryempty": [],
+    "arraysingledictionary": [
+        {
+            "string1": "test1",
+            "string2": "test2",
+        }
+    ],
+    "arraysmultipledictionaries": [
+        {
+            "string1": "test1",
+            "string2": "test2",
+        },
+        {
+            "string3": "test3",
+            "string4": "test4",
+        }
+    ],
+}
+
