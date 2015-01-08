@@ -29,5 +29,16 @@
             "string4": "test4",
         }
     ],
+    "dictionaryempty" : {
+        
+    },
+    "dictionary" : {
+        "string1" : "test1"
+    },
+    "dictionarynested" : {
+        "dictionary" : {
+            "string1" : "test1"
+        },
+    },
 }
 

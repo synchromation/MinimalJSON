@@ -101,9 +101,17 @@ extension JSON {
     var int: Int? {
         return rootObject as? Int
     }
-
+    
     var unsignedInt: UInt? {
-        return rootObject as? UInt
+        if let i = rootObject as? Int {
+            if i >= 0 {
+                return UInt(i)
+            } else {
+                return nil
+            }
+        } else {
+            return nil
+        }
     }
     
     var float: Float? {

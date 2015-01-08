@@ -17,7 +17,6 @@ class MinimalJsonTests: XCTestCase {
     let defaultDoubleZero = 0.0
     let defaultDouble = 9999.0
 
-
     var parsedJSON: JSON!
     
     override func setUp() {
@@ -81,7 +80,7 @@ class MinimalJsonTests: XCTestCase {
         var ui3 = parsedJSON["intpositive"].unsignedInt ?? UInt(defaultIntZero)
         XCTAssertEqual (ui3, UInt(defaultInt), "Doesn't return int value")
         
-        var ui4 = parsedJSON["intpositive"].unsignedInt
+        var ui4 = parsedJSON["intnegative"].unsignedInt
         XCTAssertNil (ui4, "Doesn't return nil for negative integer")
     }
     
@@ -92,14 +91,67 @@ class MinimalJsonTests: XCTestCase {
         var f2 = parsedJSON["intzero"].float ?? Float(defaultDouble)
         XCTAssertEqual (f2, Float(defaultDoubleZero), "Doesn't return 0.0")
         
-        var f3 = parsedJSON["intpositive"].int ?? defaultIntZero
-        XCTAssertEqual (f3, defaultInt, "Doesn't return int value")
+        var f3 = parsedJSON["intpositive"].float ?? Float(defaultDoubleZero)
+        XCTAssertEqual (f3, Float(defaultDouble), "Doesn't return float value")
     }
+    
+    func testDouble() {
+        var f1 = parsedJSON["missingkey"].double
+        XCTAssertNil (f1, "Doesn't return nil for missing key")
+        
+        var f2 = parsedJSON["intzero"].double ?? defaultDouble
+        XCTAssertEqual (f2, defaultDoubleZero, "Doesn't return 0.0")
+        
+        var f3 = parsedJSON["intpositive"].double ?? defaultDoubleZero
+        XCTAssertEqual (f3, defaultDouble, "Doesn't return double value")
+    }
+    
+    func testArray() {
+        var a1 = parsedJSON["missingkey"].array
+        XCTAssertNil (a1, "Doesn't return nil for missing key")
+        
+        // Empty array []
+        var a2 = parsedJSON["arraryempty"].array
+        XCTAssertNotNil (a2, "Doesn't return dictionary")
+        XCTAssertTrue (a2!.count == 0, "Doesn't return empty array")
+        
+        var a3 = parsedJSON["arraysingledictionary"].array
+        XCTAssertNotNil (a3, "Doesn't return dictionary")
+        XCTAssertTrue (a3!.count == 1, "Doesn't return array with single dictionary")
+        
+        var a4 = parsedJSON["arraysmultipledictionaries"].array
+        XCTAssertNotNil (a4, "Doesn't return dictionary")
+        XCTAssertTrue (a4!.count > 1, "Doesn't return array with single dictionary")
+    }
+    
+    func testDictionary() {
+        var d1 = parsedJSON["missingkey"].dictionary
+        XCTAssertNil (d1, "Doesn't return nil for missing key")
+        
+        // Empty dictionary [:]
+        var d2 = parsedJSON["dictionaryempty"].dictionary
+        XCTAssertNotNil (d2, "Doesn't return dictionary")
+        XCTAssertTrue (d2?.count == 0, "Doesn't return empty dictionary")
+        
+        // directory with hashes
+        // Empty dictionary [:]
+        var d3 = parsedJSON["dictionary"].dictionary
+        XCTAssertNotNil (d3, "Doesn't return dictionary")
+        XCTAssertTrue (d3?.count == 1, "Nothing in dictionary")
+        if let d: Dictionary = d3 {
+            var s1 = d["string1"] as String
+            XCTAssertEqual (s1, "test1", "Can't find string hash")
+        }
 
+        // Nested dictionrary
+    }
+    
     func testPerformanceExample() {
-        // This is an example of a performance test case.
+
         self.measureBlock() {
-            // Put the code you want to measure the time of here.
+            for _ in 1...10 {
+                var s3 = self.parsedJSON["stringempty"].string ?? self.defaultString
+            }
         }
     }
     

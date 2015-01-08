@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MinimalJsonTests/MinimalJsonTests.swift"
+            timestampString = "442331791.192704"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "MinimalJsonTests"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MinimalJsonTests.MinimalJsonTests.__deallocating_deinit"
+                  moduleName = "MinimalJsonTests"
+                  urlString = "file:///Users/nick/Documents/Xcode/Prototypes/iOS/MinimalJson/MinimalJsonTests/MinimalJsonTests.swift"
+                  timestampString = "442400924.059673"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "@objc MinimalJsonTests.MinimalJsonTests.__ivar_destroyer"
+                  moduleName = "MinimalJsonTests"
+                  urlString = "file:///Users/nick/Documents/Xcode/Prototypes/iOS/MinimalJson/MinimalJsonTests/MinimalJsonTests.swift"
+                  timestampString = "442400924.059885"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "15">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
