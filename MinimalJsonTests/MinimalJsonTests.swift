@@ -17,14 +17,14 @@ class MinimalJsonTests: XCTestCase {
     let defaultDoubleZero = 0.0
     let defaultDouble = 9999.0
 
-    var parsedJSON: JSON!
+    var parsedJSON: MinimalJSON!
     
     override func setUp() {
         super.setUp()
         
         if let file = NSBundle(forClass: MinimalJsonTests.self).pathForResource("Test", ofType: "json") {
             if let data = NSData(contentsOfFile: file) {
-                if let parsedData = JSON(data: data) {
+                if let parsedData = MinimalJSON(data: data) {
                     self.parsedJSON = parsedData
                 } else {
                     XCTFail("Failed to parse JSON from file")

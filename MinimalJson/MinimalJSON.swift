@@ -13,7 +13,7 @@ import Foundation
 *  Main struct definition
 */
 
-public class JSON {
+public class MinimalJSON {
     
     typealias JSONArray = Array<AnyObject>
     typealias JSONDictionary = Dictionary<String, AnyObject>
@@ -41,29 +41,29 @@ public class JSON {
 *  Subscript support
 */
 
-extension JSON {
+extension MinimalJSON {
     
-    subscript(hash: String) -> JSON {
+    subscript(hash: String) -> MinimalJSON {
         if let dictionary = rootObject as? Dictionary<String, AnyObject> {
             if let object: AnyObject = dictionary[hash] {
-                return JSON(object: object)
+                return MinimalJSON(object: object)
             } else {
-                return JSON(object: NSNull())
+                return MinimalJSON(object: NSNull())
             }
         } else {
-            return JSON(object: NSNull())
+            return MinimalJSON(object: NSNull())
         }
     }
     
-    subscript(index: Int) -> JSON {
+    subscript(index: Int) -> MinimalJSON {
         if let array = rootObject as? Array<AnyObject> {
             if (index >= 0) && (index < array.count) {
-                return JSON(object: array[index])
+                return MinimalJSON(object: array[index])
             } else {
-                return JSON(object: NSNull())
+                return MinimalJSON(object: NSNull())
             }
         } else {
-            return JSON(object: NSNull())
+            return MinimalJSON(object: NSNull())
         }
     }
 }
@@ -72,7 +72,7 @@ extension JSON {
 *  Value support
 */
 
-extension JSON {
+extension MinimalJSON {
 
     var array: JSONArray? {
         return rootObject as? JSONArray
