@@ -142,8 +142,13 @@ class MinimalJsonTests: XCTestCase {
             var s1 = d["string1"] as String
             XCTAssertEqual (s1, "test1", "Can't find string hash")
         }
-
+    }
+    
+    func testNested() {
+        
         // Nested dictionrary
+        var s1 = parsedJSON["arraysmultipledictionaries"][1]["string4"].string ?? defaultString
+        XCTAssertEqual (s1, "test4", "Can't find string hash")
     }
     
     func testPerformanceExample() {

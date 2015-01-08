@@ -16,7 +16,7 @@
 		01B0238A1A5D3AFD00BC2A5A /* Test.json in Resources */ = {isa = PBXBuildFile; fileRef = 01B023891A5D3AFD00BC2A5A /* Test.json */; };
 		01B0238C1A5D3D3200BC2A5A /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B0238B1A5D3D3200BC2A5A /* JSON.swift */; };
 		01B0238D1A5D3D3D00BC2A5A /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B0238B1A5D3D3200BC2A5A /* JSON.swift */; };
-		01B0238F1A5E80D800BC2A5A /* Readme.md in Sources */ = {isa = PBXBuildFile; fileRef = 01B0238E1A5E80D800BC2A5A /* Readme.md */; };
+		01B0238F1A5E80D800BC2A5A /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 01B0238E1A5E80D800BC2A5A /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +42,7 @@
 		01B0237F1A5D399E00BC2A5A /* MinimalJsonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimalJsonTests.swift; sourceTree = "<group>"; };
 		01B023891A5D3AFD00BC2A5A /* Test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Test.json; sourceTree = "<group>"; };
 		01B0238B1A5D3D3200BC2A5A /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
-		01B0238E1A5E80D800BC2A5A /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		01B0238E1A5E80D800BC2A5A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +91,7 @@
 				01B023701A5D399E00BC2A5A /* Images.xcassets */,
 				01B023721A5D399E00BC2A5A /* LaunchScreen.xib */,
 				01B023671A5D399E00BC2A5A /* Supporting Files */,
-				01B0238E1A5E80D800BC2A5A /* Readme.md */,
+				01B0238E1A5E80D800BC2A5A /* README.md */,
 			);
 			path = MinimalJson;
 			sourceTree = "<group>";
@@ -225,7 +225,7 @@
 			files = (
 				01B0238C1A5D3D3200BC2A5A /* JSON.swift in Sources */,
 				01B0236C1A5D399E00BC2A5A /* ViewController.swift in Sources */,
-				01B0238F1A5E80D800BC2A5A /* Readme.md in Sources */,
+				01B0238F1A5E80D800BC2A5A /* README.md in Sources */,
 				01B0236A1A5D399E00BC2A5A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,6 +419,7 @@
 				01B023851A5D399E00BC2A5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01B023861A5D399E00BC2A5A /* Build configuration list for PBXNativeTarget "MinimalJsonTests" */ = {
 			isa = XCConfigurationList;
@@ -427,6 +428,7 @@
 				01B023881A5D399E00BC2A5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
