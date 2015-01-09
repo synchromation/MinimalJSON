@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>MinimalJSON.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>MinimalJson.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,16 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>013F077C1A5EE0DE00696779</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>013F07861A5EE0DE00696779</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>01B023631A5D399E00BC2A5A</key>
 		<dict>
 			<key>primary</key>

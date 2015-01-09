@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		013F07821A5EE0DE00696779 /* MinimalJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 013F07811A5EE0DE00696779 /* MinimalJSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		013F07881A5EE0DE00696779 /* MinimalJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 013F077D1A5EE0DE00696779 /* MinimalJSON.framework */; };
+		013F07911A5EE0DE00696779 /* MinimalJSONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013F07901A5EE0DE00696779 /* MinimalJSONTests.swift */; };
+		013F07941A5EE0DE00696779 /* MinimalJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 013F077D1A5EE0DE00696779 /* MinimalJSON.framework */; };
+		013F07951A5EE0DE00696779 /* MinimalJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 013F077D1A5EE0DE00696779 /* MinimalJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		013F079D1A5EE0FE00696779 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B0238B1A5D3D3200BC2A5A /* JSON.swift */; };
 		01B0236A1A5D399E00BC2A5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B023691A5D399E00BC2A5A /* AppDelegate.swift */; };
 		01B0236C1A5D399E00BC2A5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B0236B1A5D399E00BC2A5A /* ViewController.swift */; };
 		01B0236F1A5D399E00BC2A5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01B0236D1A5D399E00BC2A5A /* Main.storyboard */; };
@@ -20,6 +26,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		013F07891A5EE0DE00696779 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01B0235C1A5D399E00BC2A5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 013F077C1A5EE0DE00696779;
+			remoteInfo = MinimalJSON;
+		};
+		013F078B1A5EE0DE00696779 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01B0235C1A5D399E00BC2A5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01B023631A5D399E00BC2A5A;
+			remoteInfo = MinimalJson;
+		};
+		013F07921A5EE0DE00696779 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01B0235C1A5D399E00BC2A5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 013F077C1A5EE0DE00696779;
+			remoteInfo = MinimalJSON;
+		};
 		01B0237A1A5D399E00BC2A5A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 01B0235C1A5D399E00BC2A5A /* Project object */;
@@ -29,7 +56,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		013F079B1A5EE0DE00696779 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				013F07951A5EE0DE00696779 /* MinimalJSON.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		013F077D1A5EE0DE00696779 /* MinimalJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MinimalJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		013F07801A5EE0DE00696779 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		013F07811A5EE0DE00696779 /* MinimalJSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MinimalJSON.h; sourceTree = "<group>"; };
+		013F07871A5EE0DE00696779 /* MinimalJSONTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MinimalJSONTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		013F078F1A5EE0DE00696779 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		013F07901A5EE0DE00696779 /* MinimalJSONTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimalJSONTests.swift; sourceTree = "<group>"; };
 		01B023641A5D399E00BC2A5A /* MinimalJson.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MinimalJson.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01B023681A5D399E00BC2A5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01B023691A5D399E00BC2A5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,10 +93,26 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		013F07791A5EE0DE00696779 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		013F07841A5EE0DE00696779 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				013F07881A5EE0DE00696779 /* MinimalJSON.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		01B023611A5D399E00BC2A5A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				013F07941A5EE0DE00696779 /* MinimalJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,11 +126,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		013F077E1A5EE0DE00696779 /* MinimalJSON */ = {
+			isa = PBXGroup;
+			children = (
+				013F07811A5EE0DE00696779 /* MinimalJSON.h */,
+				013F077F1A5EE0DE00696779 /* Supporting Files */,
+			);
+			path = MinimalJSON;
+			sourceTree = "<group>";
+		};
+		013F077F1A5EE0DE00696779 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				013F07801A5EE0DE00696779 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		013F078D1A5EE0DE00696779 /* MinimalJSONTests */ = {
+			isa = PBXGroup;
+			children = (
+				013F07901A5EE0DE00696779 /* MinimalJSONTests.swift */,
+				013F078E1A5EE0DE00696779 /* Supporting Files */,
+			);
+			path = MinimalJSONTests;
+			sourceTree = "<group>";
+		};
+		013F078E1A5EE0DE00696779 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				013F078F1A5EE0DE00696779 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		01B0235B1A5D399E00BC2A5A = {
 			isa = PBXGroup;
 			children = (
 				01B023661A5D399E00BC2A5A /* MinimalJson */,
 				01B0237C1A5D399E00BC2A5A /* MinimalJsonTests */,
+				013F077E1A5EE0DE00696779 /* MinimalJSON */,
+				013F078D1A5EE0DE00696779 /* MinimalJSONTests */,
 				01B023651A5D399E00BC2A5A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,6 +176,8 @@
 			children = (
 				01B023641A5D399E00BC2A5A /* MinimalJson.app */,
 				01B023791A5D399E00BC2A5A /* MinimalJsonTests.xctest */,
+				013F077D1A5EE0DE00696779 /* MinimalJSON.framework */,
+				013F07871A5EE0DE00696779 /* MinimalJSONTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,7 +225,55 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		013F077A1A5EE0DE00696779 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				013F07821A5EE0DE00696779 /* MinimalJSON.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		013F077C1A5EE0DE00696779 /* MinimalJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 013F079A1A5EE0DE00696779 /* Build configuration list for PBXNativeTarget "MinimalJSON" */;
+			buildPhases = (
+				013F07781A5EE0DE00696779 /* Sources */,
+				013F07791A5EE0DE00696779 /* Frameworks */,
+				013F077A1A5EE0DE00696779 /* Headers */,
+				013F077B1A5EE0DE00696779 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MinimalJSON;
+			productName = MinimalJSON;
+			productReference = 013F077D1A5EE0DE00696779 /* MinimalJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		013F07861A5EE0DE00696779 /* MinimalJSONTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 013F079C1A5EE0DE00696779 /* Build configuration list for PBXNativeTarget "MinimalJSONTests" */;
+			buildPhases = (
+				013F07831A5EE0DE00696779 /* Sources */,
+				013F07841A5EE0DE00696779 /* Frameworks */,
+				013F07851A5EE0DE00696779 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				013F078A1A5EE0DE00696779 /* PBXTargetDependency */,
+				013F078C1A5EE0DE00696779 /* PBXTargetDependency */,
+			);
+			name = MinimalJSONTests;
+			productName = MinimalJSONTests;
+			productReference = 013F07871A5EE0DE00696779 /* MinimalJSONTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		01B023631A5D399E00BC2A5A /* MinimalJson */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 01B023831A5D399E00BC2A5A /* Build configuration list for PBXNativeTarget "MinimalJson" */;
@@ -132,10 +281,12 @@
 				01B023601A5D399E00BC2A5A /* Sources */,
 				01B023611A5D399E00BC2A5A /* Frameworks */,
 				01B023621A5D399E00BC2A5A /* Resources */,
+				013F079B1A5EE0DE00696779 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				013F07931A5EE0DE00696779 /* PBXTargetDependency */,
 			);
 			name = MinimalJson;
 			productName = MinimalJson;
@@ -169,6 +320,13 @@
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = Synchromation;
 				TargetAttributes = {
+					013F077C1A5EE0DE00696779 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					013F07861A5EE0DE00696779 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 01B023631A5D399E00BC2A5A;
+					};
 					01B023631A5D399E00BC2A5A = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
@@ -193,11 +351,27 @@
 			targets = (
 				01B023631A5D399E00BC2A5A /* MinimalJson */,
 				01B023781A5D399E00BC2A5A /* MinimalJsonTests */,
+				013F077C1A5EE0DE00696779 /* MinimalJSON */,
+				013F07861A5EE0DE00696779 /* MinimalJSONTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		013F077B1A5EE0DE00696779 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		013F07851A5EE0DE00696779 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		01B023621A5D399E00BC2A5A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -219,6 +393,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		013F07781A5EE0DE00696779 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				013F079D1A5EE0FE00696779 /* JSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		013F07831A5EE0DE00696779 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				013F07911A5EE0DE00696779 /* MinimalJSONTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		01B023601A5D399E00BC2A5A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -242,6 +432,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		013F078A1A5EE0DE00696779 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 013F077C1A5EE0DE00696779 /* MinimalJSON */;
+			targetProxy = 013F07891A5EE0DE00696779 /* PBXContainerItemProxy */;
+		};
+		013F078C1A5EE0DE00696779 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01B023631A5D399E00BC2A5A /* MinimalJson */;
+			targetProxy = 013F078B1A5EE0DE00696779 /* PBXContainerItemProxy */;
+		};
+		013F07931A5EE0DE00696779 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 013F077C1A5EE0DE00696779 /* MinimalJSON */;
+			targetProxy = 013F07921A5EE0DE00696779 /* PBXContainerItemProxy */;
+		};
 		01B0237B1A5D399E00BC2A5A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 01B023631A5D399E00BC2A5A /* MinimalJson */;
@@ -269,6 +474,80 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		013F07961A5EE0DE00696779 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MinimalJSON/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		013F07971A5EE0DE00696779 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MinimalJSON/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		013F07981A5EE0DE00696779 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MinimalJSONTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MinimalJson.app/MinimalJson";
+			};
+			name = Debug;
+		};
+		013F07991A5EE0DE00696779 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MinimalJSONTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MinimalJson.app/MinimalJson";
+			};
+			name = Release;
+		};
 		01B023811A5D399E00BC2A5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -403,6 +682,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		013F079A1A5EE0DE00696779 /* Build configuration list for PBXNativeTarget "MinimalJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				013F07961A5EE0DE00696779 /* Debug */,
+				013F07971A5EE0DE00696779 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		013F079C1A5EE0DE00696779 /* Build configuration list for PBXNativeTarget "MinimalJSONTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				013F07981A5EE0DE00696779 /* Debug */,
+				013F07991A5EE0DE00696779 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		01B0235F1A5D399E00BC2A5A /* Build configuration list for PBXProject "MinimalJson" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
